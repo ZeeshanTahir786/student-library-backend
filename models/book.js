@@ -6,6 +6,7 @@ const bookSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  description: String,
   borrowedBy: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Student",

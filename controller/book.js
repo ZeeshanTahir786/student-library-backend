@@ -6,6 +6,7 @@ exports.createBook = async (req, res) => {
     const newBook = {
       bookName: req.body.bookName,
       auther: req.body.auther,
+      description: req.body.description,
     };
     const book = await Book.create(newBook);
     return res.status(201).json({
